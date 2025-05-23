@@ -1,9 +1,8 @@
 # Elevated Vector Automation - Official Website
 
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Felevated-vector.com&label=Website)](https://elevatedvector.com)
-[![GitHub Pages](https://img.shields.io/github/deployments/elevated-vector/eva-home/github-pages?label=Deployment)](https://github.com/elevated-vector/eva-home/deployments)
+[![GitHub Pages](https://github.com/elevatedvector/elevatedvector.com/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/elevatedvector/elevatedvector.com/actions/workflows/pages/pages-build-deployment)
+[![Website Status](https://img.shields.io/website?url=https%3A%2F%2Felevatedvector.com)](https://elevatedvector.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Last Commit](https://img.shields.io/github/last-commit/elevated-vector/eva-home)](https://github.com/elevated-vector/eva-home/commits/main)
 
 > **Ethical AI Solutions That Elevate Human Potential**
 
@@ -12,7 +11,7 @@ The official website for Elevated Vector Automation LLC - a specialized AI consu
 ## 🌐 Live Website
 
 **Production**: [https://elevatedvector.com](https://elevatedvector.com)  
-**Development**: [https://elevatedvector.github.io/eva-home/](https://elevated-vector.github.io/eva-home/)
+**Development**: [https://elevatedvector.github.io/elevatedvector.com/](https://elevatedvector.github.io/elevatedvector.com/)
 
 ---
 
