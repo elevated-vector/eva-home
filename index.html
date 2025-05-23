@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevated Vector Automation - Ethical AI Solutions That Elevate Human Potential</title>
+    <meta name="description" content="Transform your organization with ethical AI automation. We create intelligent systems that enhance human capability, amplify impact, and honor human dignity.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0ea5e9;
+            --secondary-color: #0284c7;
+            --accent-color: #38bdf8;
+            --accent-secondary: #06b6d4;
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --text-muted: #94a3b8;
+            --background: #0f172a;
+            --background-alt: #1e293b;
+            --background-card: #334155;
+            --background-elevated: #475569;
+            --gradient-primary: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #06b6d4 100%);
+            --gradient-secondary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
+            --gradient-accent: linear-gradient(135deg, #f59e0b 0%, #ef4444 50%, #ec4899 100%);
+            --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.2);
+            --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.3);
+            --shadow-xl: 0 25px 50px rgba(0, 0, 0, 0.4);
+            --border-color: #475569;
+            --border-light: #64748b;
+            --glow-primary: 0 0 20px rgba(14, 165, 233, 0.3);
+            --glow-secondary: 0 0 30px rgba(14, 165, 233, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--background);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Enhanced Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.95);
+            -webkit-backdrop-filter: blur(20px); /* ADDED for Safari compatibility */
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-bottom: 1px solid rgba(71, 85, 105, 0.3);
+        }
+
+        header.scrolled {
+            background: rgba(15, 23, 42, 0.98);
+            box-shadow: var(--shadow-md);
+            border-bottom-color: rgba(71, 85, 105, 0.5);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(var(--glow-primary));
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover:before {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        .cta-button {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-button:hover:before {
+            left: 100%;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: var(--shadow-lg);
+            filter: drop-shadow(var(--glow-primary));
+        }
+
+        /* Enhanced Hero Section */
+        .hero {
+            margin-top: 80px;
+            padding: 8rem 0;
+            background: 
+                radial-gradient(ellipse at top, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at bottom, rgba(6, 182, 212, 0.1) 0%, transparent 50%),
+                linear-gradient(135deg, var(--background) 0%, var(--background-alt) 100%);
+            position: relative;
+            overflow: hidden;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23475569" stroke-width="0.3"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.4;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(10px, 10px); }
+        }
+
+        .hero-floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .floating-shape {
+            position: absolute;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-shape:nth-child(1) {
+            width: 100px;
+            height: 100px;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-shape:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            top: 60%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        .floating-shape:nth-child(3) {
+            width: 80px;
+            height: 80px;
+            bottom: 30%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        .hero-content {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 900;
+            margin-bottom: 2rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            position: relative;
+        }
+
+        .hero h1:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-primary);
+            border-radius: 2px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 4rem;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 1.25rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--shadow-md);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn-primary:hover:before {
+            left: 100%;
+        }
+
+        .btn-secondary {
+            background: rgba(14, 165, 233, 0.1);
+            color: var(--primary-color);
+            padding: 1.25rem 2.5rem;
+            border: 2px solid var(--primary-color);
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            -webkit-backdrop-filter: blur(10px); /* ADDED for Safari compatibility */
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-primary:hover, .btn-secondary:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: var(--shadow-lg);
+            filter: drop-shadow(var(--glow-primary));
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+        }
+
+        /* Enhanced Values Section */
+        .values {
+            padding: 8rem 0;
+            background: var(--background);
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+            position: relative;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            position: relative;
+        }
+
+        .section-header h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--gradient-primary);
+            border-radius: 2px;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .value-card {
+            background: var(--background-card);
+            padding: 2.5rem;
+            border-radius: 24px;
+            box-shadow: var(--shadow-md);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .value-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--gradient-primary);
+        }
+
+        .value-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-color);
+        }
+
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            color: white;
+            font-size: 2rem;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover .value-icon {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .value-icon svg,
+        .market-icon svg,
+        .solution-icon svg {
+            width: 60%;
+            height: 60%;
+            fill: currentColor;
+        }
+
+        .value-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .value-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        /* Enhanced Solutions Section */
+        .solutions {
+            padding: 8rem 0;
+            background: 
+                radial-gradient(ellipse at center, rgba(99, 102, 241, 0.05) 0%, transparent 50%),
+                var(--background-alt);
+            position: relative;
+        }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .solution-card {
+            background: var(--background-card);
+            padding: 3rem;
+            border-radius: 24px;
+            box-shadow: var(--shadow-md);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .solution-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+        }
+
+        .solution-card:nth-child(2):before {
+            background: var(--gradient-secondary);
+        }
+
+        .solution-card:nth-child(3):before {
+            background: var(--gradient-accent);
+        }
+
+        .solution-card:nth-child(4):before {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+
+        .solution-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-color);
+        }
+
+        .solution-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        .solution-card:nth-child(2) .solution-icon {
+            background: var(--gradient-secondary);
+        }
+
+        .solution-card:nth-child(3) .solution-icon {
+            background: var(--gradient-accent);
+        }
+
+        .solution-card:nth-child(4) .solution-icon {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+
+        .solution-card:hover .solution-icon {
+            transform: scale(1.1) rotate(-5deg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .solution-card h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .solution-card p {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .solution-features {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .solution-features li {
+            padding: 0.75rem 0;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .solution-features li:hover {
+            color: var(--text-primary);
+            transform: translateX(5px);
+        }
+
+        .solution-features li:before {
+            content: '✓';
+            color: #10b981;
+            font-weight: bold;
+            font-size: 1.2rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        /* Enhanced Target Market Section */
+        .target-market {
+            padding: 8rem 0;
+            background: var(--background);
+            position: relative;
+        }
+
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        .market-card {
+            background: var(--background-card);
+            padding: 2.5rem;
+            border-radius: 24px;
+            box-shadow: var(--shadow-md);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-align: center;
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .market-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--gradient-primary);
+        }
+
+        .market-card:nth-child(2):before {
+            background: var(--gradient-secondary);
+        }
+
+        .market-card:nth-child(3):before {
+            background: var(--gradient-accent);
+        }
+
+        .market-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-color);
+        }
+
+        .market-icon {
+            width: 100px;
+            height: 100px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            color: white;
+            font-size: 2.5rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        .market-card:nth-child(2) .market-icon {
+            background: var(--gradient-secondary);
+        }
+
+        .market-card:nth-child(3) .market-icon {
+            background: var(--gradient-accent);
+        }
+
+        .market-card:hover .market-icon {
+            transform: scale(1.1);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .market-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .market-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* Enhanced Team Section */
+        .team {
+            padding: 8rem 0;
+            background: 
+                radial-gradient(ellipse at center, rgba(14, 165, 233, 0.05) 0%, transparent 50%),
+                var(--background-alt);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .team-card {
+            background: var(--background-card);
+            padding: 3rem 2rem;
+            border-radius: 24px;
+            box-shadow: var(--shadow-md);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-align: center;
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+        }
+
+        .team-card:nth-child(2):before {
+            background: var(--gradient-secondary);
+        }
+
+        .team-card:nth-child(3):before {
+            background: var(--gradient-accent);
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-color);
+        }
+
+        .team-avatar {
+            width: 120px;
+            height: 120px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        .team-card:nth-child(2) .team-avatar {
+            background: var(--gradient-secondary);
+        }
+
+        .team-card:nth-child(3) .team-avatar {
+            background: var(--gradient-accent);
+        }
+
+        .team-card:hover .team-avatar {
+            transform: scale(1.1);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .team-card h3 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .team-role {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .team-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* Enhanced CTA Section */
+        .cta-section {
+            padding: 8rem 0;
+            background: 
+                radial-gradient(ellipse at center, rgba(14, 165, 233, 0.1) 0%, transparent 70%),
+                var(--background-card);
+            color: var(--text-primary);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23475569" opacity="0.3"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+            opacity: 0.5;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-section h2 {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        .btn-white {
+            background: var(--gradient-primary);
+            color: #FFFFFF;
+            padding: 1.25rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-white:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn-white:hover:before {
+            left: 100%;
+        }
+
+        .btn-white:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: var(--shadow-lg);
+            filter: drop-shadow(var(--glow-primary));
+        }
+
+        /* Enhanced Footer */
+        footer {
+            background: #020617;
+            color: white;
+            padding: 4rem 0 2rem;
+            border-top: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h4 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-section p, 
+        .footer-section a {
+            color: #94a3b8;
+            text-decoration: none;
+            line-height: 1.8;
+            transition: all 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-color);
+            transform: translateX(3px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+            text-align: center;
+            color: #94a3b8;
+        }
+
+        /* Mobile Hamburger Menu */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--text-primary);
+            margin: 3px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 80px;
+            left: 0;
+            right: 0;
+            background: rgba(15, 23, 42, 0.98);
+            -webkit-backdrop-filter: blur(20px); /* ADDED for Safari compatibility */
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 2rem;
+            z-index: 999;
+        }
+
+        .mobile-menu.active {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+
+        .mobile-nav-links {
+            list-style: none;
+            text-align: center;
+        }
+
+        .mobile-nav-links li {
+            margin: 1rem 0;
+        }
+
+        .mobile-nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            display: block;
+            padding: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            .hero {
+                padding: 6rem 0;
+                min-height: 80vh;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .hero-stats {
+                gap: 1.5rem;
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .values-grid,
+            .solutions-grid,
+            .market-grid,
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .value-card,
+            .solution-card,
+            .market-card,
+            .team-card {
+                padding: 2rem;
+            }
+
+            .cta-section {
+                padding: 6rem 0;
+            }
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .slide-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .slide-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Loading Animation */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--background);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading-overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--border-color);
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Smooth scrolling for all browsers */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <div class="logo">E.V.A.</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-floating-elements">
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>AI Solutions That Elevate Human Potential</h1>
+                <p>Transform your organization with ethical AI automation that enhances human capability, amplifies impact, and honors human dignity through intelligent systems designed for meaningful collaboration.</p>
+                <div class="hero-buttons">
+                    <a href="#solutions" class="btn-primary">
+                        🚀 Explore Solutions
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        📅 Schedule Consultation
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span>Ethical AI Focus</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span>Intelligent Systems</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">∞</span>
+                        <span>Human Potential</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section id="about" class="values">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Core Values</h2>
+                <p>We believe technology should serve humanity, not the other way around. Our approach centers on creating AI solutions that truly elevate human potential while fostering authentic connections and sustainable growth.</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card fade-in">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                        </svg>
+                    </div>
+                    <h3>Human Elevation</h3>
+                    <p>Technology should lift people up, not replace them. We measure success by how our solutions enhance human capability and create more time for meaningful activities that matter most.</p>
+                </div>
+                <div class="value-card fade-in">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v2H7v-2.21c-.79-.25-1.48-.63-2.07-1.12L3.05 15.54C4.56 18.04 7.96 20 12 20c1.89 0 3.63-.57 5.09-1.56L15 13.7V12h1.57c.93-.09 1.79-.35 2.56-.75l1.82 1.82c-1.31 1.39-3.08 2.34-5.02 2.66L13 17v2h-2v-2.07zM12 4c.99 0 1.93.16 2.79.44L12.5 7H11V5.5c0-.83.67-1.5 1.5-1.5S14 4.67 14 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.49 6-3.31 6-6.72h-1.7z"/>
+                        </svg>
+                    </div>
+                    <h3>Ecological Thinking</h3>
+                    <p>We design with awareness of second and third-order consequences, considering effects on the entire organizational ecosystem and balancing stakeholder needs for sustainable outcomes.</p>
+                </div>
+                <div class="value-card fade-in">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83zM3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19z"/>
+                        </svg>
+                    </div>
+                    <h3>Craft Excellence</h3>
+                    <p>Details matter in everything we create. We pursue mastery in implementation, ensuring our code quality reflects deep respect for those who will maintain and benefit from our solutions.</p>
+                </div>
+                <div class="value-card fade-in">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zM8 11h8v2H8v-2z"/>
+                        </svg>
+                    </div>
+                    <h3>Authentic Connection</h3>
+                    <p>Technology should enable more meaningful human interaction, not replace it. We build trust through transparency and communicate with clarity, integrity, and genuine care.</p>
+                </div>
+                <div class="value-card fade-in">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2 .9-2 2s.9 2 2 2 2 .9 2 2-.9 2-2 2zm9 4h-2v-4h2v4zm4-4h-2v-4h2v4z"/>
+                        </svg>
+                    </div>
+                    <h3>Regenerative Impact</h3>
+                    <p>Our work creates positive spirals of value that compound over time. Solutions generate more capacity than they consume, turning client success into broader community benefit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Solutions</h2>
+                <p>Comprehensive AI automation systems designed to enhance your organization's capabilities while preserving what makes you uniquely human and authentically connected to your mission.</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card slide-in-left">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-3 2v5l-1-.75L15 9V4h2zm-3 7H9.5v-.75L12 8.5V4h2v7zm-3-3H7.5v-.75L9 6.5V4h2v4z"/>
+                        </svg>
+                    </div>
+                    <h3>Knowledge Elevation System</h3>
+                    <p>Transform organizational information into accessible intelligence through advanced RAG technology and intuitive interfaces that make complex data instantly actionable.</p>
+                    <ul class="solution-features">
+                        <li>Document Intelligence Pipeline with Advanced Processing</li>
+                        <li>Custom Knowledge Base Architecture & Design</li>
+                        <li>Semantic Search with Natural Language Queries</li>
+                        <li>Insight Extraction & Pattern Recognition</li>
+                        <li>Seamless Integration Framework</li>
+                    </ul>
+                </div>
+                <div class="solution-card slide-in-right">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 18l8.5-6L4 6v12zm9-12v12l8.5-6L13 6z"/>
+                        </svg>
+                    </div>
+                    <h3>Content Acceleration Engine</h3>
+                    <p>Integrated content creation and distribution system that maintains your authentic brand voice while dramatically increasing output capacity across multiple channels and platforms.</p>
+                    <ul class="solution-features">
+                        <li>Voice-Aligned Generation with Brand Consistency</li>
+                        <li>Multi-Channel Distribution & Automation</li>
+                        <li>Strategic Content Planning & Optimization</li>
+                        <li>Performance Analytics & Insights</li>
+                        <li>Editorial Workflow Integration & Management</li>
+                    </ul>
+                </div>
+                <div class="solution-card slide-in-left">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.49 6-3.31 6-6.72h-1.7z"/>
+                        </svg>
+                    </div>
+                    <h3>Voice AI Solutions</h3>
+                    <p>Voice interface and audio content systems that create natural, emotionally resonant audio experiences for both internal communications and customer-facing applications.</p>
+                    <ul class="solution-features">
+                        <li>Custom Voice Identity Development</li>
+                        <li>Intelligent Audio Content Generation</li>
+                        <li>Interactive Voice Interface Design</li>
+                        <li>Advanced Voice Analytics & Insights</li>
+                        <li>Multi-Platform Integration & Deployment</li>
+                    </ul>
+                </div>
+                <div class="solution-card slide-in-right">
+                    <div class="solution-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2 .9-2 2s.9 2 2 2 2 .9 2 2-.9 2-2 2zm9 4h-2v-4h2v4zm4-4h-2v-4h2v4z"/>
+                        </svg>
+                    </div>
+                    <h3>Intelligent Agent Ecosystem</h3>
+                    <p>Multi-agent systems designed for complex workflow automation, research, and decision support with sophisticated collaboration frameworks and human-in-the-loop design.</p>
+                    <ul class="solution-features">
+                        <li>Custom Agent Development & Training</li>
+                        <li>Advanced Tool Integration Framework</li>
+                        <li>Workflow Orchestration & Automation</li>
+                        <li>Human-in-the-Loop Design Philosophy</li>
+                        <li>Adaptive Learning & Optimization Systems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Market Section -->
+    <section class="target-market">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Who We Serve</h2>
+                <p>We partner with visionary organizations that share our commitment to using technology for positive impact and meaningful transformation in their communities and beyond.</p>
+            </div>
+            <div class="market-grid">
+                <div class="market-card fade-in">
+                    <div class="market-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </div>
+                    <h3>Mission-Driven Organizations</h3>
+                    <p>Nonprofits, NGOs, B Corporations, social enterprises, educational institutions, and healthcare organizations seeking to amplify their impact and reach more people effectively.</p>
+                </div>
+                <div class="market-card fade-in">
+                    <div class="market-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2 .9-2 2s.9 2 2 2 2 .9 2 2-.9 2-2 2zm9 4h-2v-4h2v4zm4-4h-2v-4h2v4z"/>
+                        </svg>
+                    </div>
+                    <h3>Conscious Businesses</h3>
+                    <p>Wellness providers, sustainable companies, regenerative agriculture enterprises, community-centered retail, and creative businesses committed to positive social and environmental change.</p>
+                </div>
+                <div class="market-card fade-in">
+                    <div class="market-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2 .9-2 2s.9 2 2 2 2 .9 2 2-.9 2-2 2zm9 4h-2v-4h2v4zm4-4h-2v-4h2v4z"/>
+                        </svg>
+                    </div>
+                    <h3>Forward-Thinking Enterprises</h3>
+                    <p>Innovation departments, ESG initiatives, knowledge management transformations, employee wellbeing programs, and customer experience enhancement projects in progressive organizations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Meet Our Team</h2>
+                <p>A passionate group of technologists, strategists, and innovators dedicated to creating AI solutions that truly serve humanity while advancing organizational excellence and authentic impact.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card fade-in">
+                    <div class="team-avatar">HH</div>
+                    <h3>Hans J Havlik</h3>
+                    <div class="team-role">Chief Technical Officer</div>
+                    <p>Leading technical vision and AI implementation with a focus on ensuring our solutions meet the highest standards of excellence, ethical consideration, and sustainable innovation.</p>
+                </div>
+                <div class="team-card fade-in">
+                    <div class="team-avatar">BB</div>
+                    <h3>Balarama D Bosch</h3>
+                    <div class="team-role">Chief Revenue Officer</div>
+                    <p>Driving business growth and cultivating meaningful client relationships, connecting mission-driven organizations with AI solutions that authentically serve their purpose.</p>
+                </div>
+                <div class="team-card fade-in">
+                    <div class="team-avatar">JK</div>
+                    <h3>Jordan Kearfott</h3>
+                    <div class="team-role">Chief Product Officer</div>
+                    <p>Defining product strategy and user experience design, ensuring our solutions are intuitive, powerful, and perfectly aligned with evolving human needs and organizational goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2>Ready to Elevate Your Organization?</h2>
+                <p>Let's explore how ethical AI automation can transform your work, amplify your impact, and create more meaningful connections with those you serve.</p>
+                <a href="mailto:admin@elevatedvector.com" class="btn-white">
+                    ✉️ Contact Us Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Elevated Vector Automation</h4>
+                    <p>Transforming organizations through ethical AI solutions that enhance human potential, foster authentic connection, and create regenerative impact in communities worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p>Email: <a href="mailto:admin@elevatedvector.com">admin@elevatedvector.com</a></p>
+                    <p>Ready to discuss your AI automation needs and explore possibilities together.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Solutions</h4>
+                    <p><a href="#solutions">Knowledge Elevation System</a></p>
+                    <p><a href="#solutions">Content Acceleration Engine</a></p>
+                    <p><a href="#solutions">Voice AI Solutions</a></p>
+                    <p><a href="#solutions">Intelligent Agent Ecosystem</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Elevated Vector Automation LLC. All rights reserved. • Ethical AI • Human-Centered Design • Regenerative Impact</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Enhanced JavaScript functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Loading overlay
+            setTimeout(() => {
+                document.getElementById('loadingOverlay').classList.add('hidden');
+            }, 1000);
+
+            // Mobile menu functionality
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            mobileMenuToggle.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!mobileMenuToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
+                    mobileMenu.classList.remove('active');
+                }
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        // Close mobile menu if open
+                        mobileMenu.classList.remove('active');
+                    }
+                });
+            });
+
+            // Enhanced header scroll effect
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animated elements
+            document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Parallax effect for floating shapes
+            window.addEventListener('scroll', function() {
+                const scrolled = window.pageYOffset;
+                const shapes = document.querySelectorAll('.floating-shape');
+                
+                shapes.forEach((shape, index) => {
+                    const speed = 0.5 + (index * 0.1);
+                    const yPos = -(scrolled * speed);
+                    shape.style.transform = `translateY(${yPos}px)`;
+                });
+            });
+
+            // Enhanced hover effects for cards
+            const cards = document.querySelectorAll('.value-card, .solution-card, .market-card, .team-card');
+            
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = this.style.transform + ' scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = this.style.transform.replace(' scale(1.02)', '');
+                });
+            });
+
+            // Typing effect for hero title (optional enhancement)
+            const heroTitle = document.querySelector('.hero h1');
+            const titleText = heroTitle.textContent;
+            
+            // Uncomment below for typing effect
+            /*
+            heroTitle.textContent = '';
+            let i = 0;
+            const typeWriter = () => {
+                if (i < titleText.length) {
+                    heroTitle.textContent += titleText.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 50);
+                }
+            };
+            setTimeout(typeWriter, 500);
+            */
+
+            // Add subtle mouse move effects
+            document.addEventListener('mousemove', function(e) {
+                const shapes = document.querySelectorAll('.floating-shape');
+                const x = e.clientX / window.innerWidth;
+                const y = e.clientY / window.innerHeight;
+                
+                shapes.forEach((shape, index) => {
+                    const speed = (index + 1) * 0.5;
+                    const xPos = (x - 0.5) * speed;
+                    const yPos = (y - 0.5) * speed;
+                    
+                    shape.style.transform += ` translate(${xPos}px, ${yPos}px)`;
+                });
+            });
+        });
+
+        // Performance optimization - lazy loading for images if any are added
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+    </script>
+</body>
+</html>
