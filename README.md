@@ -11,7 +11,7 @@ The official website for Elevated Vector Automation LLC - a specialized AI consu
 ## 🌐 Live Website
 
 **Production**: [https://elevatedvector.com](https://elevatedvector.com)  
-**Development**: [https://elevatedvector.github.io/elevatedvector.com/](https://elevatedvector.github.io/elevatedvector.com/)
+**Development**: [https://elevatedvector.github.io/elevatedvector.com/](https://elevated-vector.github.io/eva-home/)
 
 ---
 
