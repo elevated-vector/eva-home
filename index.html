@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary-color: #0ea5e9;
@@ -631,12 +632,17 @@
         }
 
         .solution-features li:before {
-            content: '✓';
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
             color: #10b981;
-            font-weight: bold;
             font-size: 1.2rem;
             width: 20px;
             text-align: center;
+        }
+
+        .solution-card .fas {
+            font-size: 2.5rem;
         }
 
         /* Enhanced Target Market Section */
@@ -1176,13 +1182,12 @@
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="#contact" class="cta-button">Get Started</a>
             <div class="mobile-menu-toggle" id="mobileMenuToggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-        </nav>
+            <a href="#contact" class="cta-button">Get Started</a>        </nav>
         <div class="mobile-menu" id="mobileMenu">
             <ul class="mobile-nav-links">
                 <li><a href="#about">About</a></li>
@@ -1206,10 +1211,10 @@
                 <p>Transform your organization with ethical AI automation that enhances human capability, amplifies impact, and honors human dignity through intelligent systems designed for meaningful collaboration.</p>
                 <div class="hero-buttons">
                     <a href="#solutions" class="btn-primary">
-                        <span class="btn-icon">🚀</span> Explore Solutions
+                        <span class="btn-icon"><i class="fas fa-route"></i></span> Explore Solutions
                     </a>
                     <a href="#contact" class="btn-secondary">
-                        <span class="btn-icon">📅</span> Schedule Consultation
+                        <span class="btn-icon"><i class="fas fa-calendar-check"></i></span> Schedule Consultation
                     </a>
                 </div>
                 <div class="hero-stats">
@@ -1240,45 +1245,35 @@
             <div class="values-grid">
                 <div class="value-card fade-in">
                     <div class="value-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                        </svg>
+                        <i class="fas fa-user"></i>
                     </div>
                     <h3>Human elevation</h3>
                     <p>Technology should lift people up, not replace them. We measure success by how our solutions enhance human capability and create more time for meaningful activities that matter most.</p>
                 </div>
                 <div class="value-card fade-in">
                     <div class="value-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v2H7v-2.21c-.79-.25-1.48-.63-2.07-1.12L3.05 15.54C4.56 18.04 7.96 20 12 20c1.89 0 3.63-.57 5.09-1.56L15 13.7V12h1.57c.93-.09 1.79-.35 2.56-.75l1.82 1.82c-1.31 1.39-3.08 2.34-5.02 2.66L13 17v2h-2v-2.07zM12 4c.99 0 1.93.16 2.79.44L12.5 7H11V5.5c0-.83.67-1.5 1.5-1.5S14 4.67 14 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.49 6-3.31 6-6.72h-1.7z"/>
-                        </svg>
+                        <i class="fas fa-seedling"></i>
                     </div>
                     <h3>Ecological thinking</h3>
                     <p>We design with awareness of second and third-order consequences, considering effects on the entire organizational ecosystem and balancing stakeholder needs for sustainable outcomes.</p>
                 </div>
                 <div class="value-card fade-in">
                     <div class="value-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83zM3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19z"/>
-                        </svg>
+                        <i class="fas fa-pen-to-square"></i>
                     </div>
                     <h3>Craft excellence</h3>
                     <p>Details matter in everything we create. We pursue mastery in implementation, ensuring our code quality reflects deep respect for those who will maintain and benefit from our solutions.</p>
                 </div>
                 <div class="value-card fade-in">
                     <div class="value-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zM8 11h8v2H8v-2z"/>
-                        </svg>
+                        <i class="fas fa-link"></i>
                     </div>
                     <h3>Authentic connection</h3>
                     <p>Technology should enable more meaningful human interaction, not replace it. We build trust through transparency and communicate with clarity, integrity, and genuine care.</p>
                 </div>
                 <div class="value-card fade-in">
                     <div class="value-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2 .9-2 2s.9 2 2 2 2 .9 2 2-.9 2-2 2zm9 4h-2v-4h2v4zm4-4h-2v-4h2v4z"/>
-                        </svg>
+                        <i class="fas fa-sync"></i>
                     </div>
                     <h3>Regenerative impact</h3>
                     <p>Our work creates positive spirals of value that compound over time. Solutions generate more capacity than they consume, turning client success into broader community benefit.</p>
@@ -1297,9 +1292,7 @@
             <div class="solutions-grid">
                 <div class="solution-card slide-in-left">
                     <div class="solution-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-3 2v5l-1-.75L15 9V4h2zm-3 7H9.5v-.75L12 8.5V4h2v7zm-3-3H7.5v-.75L9 6.5V4h2v4z"/>
-                        </svg>
+                        <i class="fas fa-brain"></i>
                     </div>
                     <h3>Knowledge elevation system</h3>
                     <p>Transform organizational information into accessible intelligence through advanced Retrieval-Augmented Generation (RAG) technology and intuitive interfaces that make complex data instantly actionable.</p>
@@ -1313,9 +1306,7 @@
                 </div>
                 <div class="solution-card slide-in-right">
                     <div class="solution-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M4 18l8.5-6L4 6v12zm9-12v12l8.5-6L13 6z"/>
-                        </svg>
+                        <i class="fas fa-bolt"></i>
                     </div>
                     <h3>Content acceleration engine</h3>
                     <p>Integrated content creation and distribution system that maintains your authentic brand voice while dramatically increasing output capacity across multiple channels and platforms.</p>
@@ -1329,9 +1320,7 @@
                 </div>
                 <div class="solution-card slide-in-left">
                     <div class="solution-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.49 6-3.31 6-6.72h-1.7z"/>
-                        </svg>
+                        <i class="fas fa-microphone"></i>
                     </div>
                     <h3>Voice AI solutions</h3>
                     <p>Voice interface and audio content systems that create natural, emotionally resonant audio experiences for both internal communications and customer-facing applications.</p>
@@ -1345,9 +1334,7 @@
                 </div>
                 <div class="solution-card slide-in-right">
                     <div class="solution-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2 .9-2 2s.9 2 2 2 2 .9 2 2-.9 2-2 2zm9 4h-2v-4h2v4zm4-4h-2v-4h2v4z"/>
-                        </svg>
+                        <i class="fas fa-cogs"></i>
                     </div>
                     <h3>Intelligent agent ecosystem</h3>
                     <p>Multi-agent systems designed for complex workflow automation, research, and decision support with sophisticated collaboration frameworks and human-in-the-loop design.</p>
@@ -1373,27 +1360,21 @@
             <div class="market-grid">
                 <div class="market-card fade-in">
                     <div class="market-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                        </svg>
+                        <i class="fas fa-hands-helping"></i>
                     </div>
                     <h3>Mission-driven organizations</h3>
                     <p>Nonprofits, NGOs, B Corporations, social enterprises, educational institutions, and healthcare organizations seeking to amplify their impact and reach more people effectively.</p>
                 </div>
                 <div class="market-card fade-in">
                     <div class="market-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2 .9-2 2s.9 2 2 2 2 .9 2 2-.9 2-2 2zm9 4h-2v-4h2v4zm4-4h-2v-4h2v4z"/>
-                        </svg>
+                        <i class="fas fa-leaf"></i>
                     </div>
                     <h3>Conscious businesses</h3>
                     <p>Wellness providers, sustainable companies, regenerative agriculture enterprises, community-centered retail, and creative businesses committed to positive social and environmental change.</p>
                 </div>
                 <div class="market-card fade-in">
                     <div class="market-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2 .9-2 2s.9 2 2 2 2 .9 2 2-.9 2-2 2zm9 4h-2v-4h2v4zm4-4h-2v-4h2v4z"/>
-                        </svg>
+                        <i class="fas fa-lightbulb"></i>
                     </div>
                     <h3>Forward-thinking enterprises</h3>
                     <p>Innovation departments, ESG initiatives, knowledge management transformations, employee wellbeing programs, and customer experience enhancement projects in progressive organizations.</p>
@@ -1439,7 +1420,7 @@
                 <h2>Ready to elevate your organization?</h2>
                 <p>Let's explore how ethical AI automation can transform your work, amplify your impact, and create more meaningful connections with those you serve.</p>
                 <a href="mailto:admin@elevatedvector.com" class="btn-white">
-                    <span class="btn-icon">✉️</span> Contact Us Today
+                    <span class="btn-icon"><i class="fas fa-paper-plane"></i></span> Contact Us Today
                 </a>
             </div>
         </div>
