@@ -459,8 +459,24 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 1px;
+            height: 4px;
             background: var(--gradient-primary);
+        }
+        
+        .value-card:nth-child(2):before {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+        
+        .value-card:nth-child(3):before {
+            background: var(--gradient-accent);
+        }
+        
+        .value-card:nth-child(4):before {
+            background: var(--gradient-secondary);
+        }
+        
+        .value-card:nth-child(5):before {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
         }
 
         .value-card:hover {
@@ -482,6 +498,22 @@
             font-size: 2rem;
             box-shadow: var(--shadow-md);
             transition: all 0.3s ease;
+        }
+        
+        .value-card:nth-child(2) .value-icon {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+        
+        .value-card:nth-child(3) .value-icon {
+            background: var(--gradient-accent);
+        }
+        
+        .value-card:nth-child(4) .value-icon {
+            background: var(--gradient-secondary);
+        }
+        
+        .value-card:nth-child(5) .value-icon {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
         }
 
         .value-card:hover .value-icon {
@@ -682,7 +714,7 @@
         }
 
         .market-card:nth-child(2):before {
-            background: var(--gradient-secondary);
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
         }
 
         .market-card:nth-child(3):before {
@@ -711,7 +743,7 @@
         }
 
         .market-card:nth-child(2) .market-icon {
-            background: var(--gradient-secondary);
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
         }
 
         .market-card:nth-child(3) .market-icon {
