@@ -7,7 +7,8 @@
     <meta name="description" content="Transform your organization with ethical AI automation. We create intelligent systems that enhance human capability, amplify impact, and honor human dignity.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary-color: #0ea5e9;
@@ -41,18 +42,23 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: var(--text-primary);
             background: var(--background);
             overflow-x: hidden;
             scroll-behavior: smooth;
+            font-size: 16px;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+        }
+
+        #hero {
+            padding: 8rem 20px;
         }
 
         /* Enhanced Header & Navigation */
@@ -82,6 +88,7 @@
         }
 
         .logo {
+            font-family: 'Manrope', sans-serif;
             font-size: 1.75rem;
             font-weight: 800;
             background: var(--gradient-primary);
@@ -93,6 +100,10 @@
             transition: all 0.3s ease;
         }
 
+        .logo a {
+            text-decoration: none;
+        }
+
         .logo:hover {
             transform: scale(1.05);
             filter: drop-shadow(var(--glow-primary));
@@ -101,16 +112,17 @@
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 1rem;
         }
 
         .nav-links a {
+            font-family: 'Manrope', sans-serif;
             text-decoration: none;
             color: var(--text-primary);
             font-weight: 500;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
-            padding: 0.5rem 0;
+            padding: 0.5rem;
         }
 
         .nav-links a:before {
@@ -135,15 +147,17 @@
 
         .cta-button {
             background: var(--gradient-primary);
-            color: white;
-            padding: 0.75rem 1.5rem;
             border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             box-shadow: var(--shadow-md);
-            position: relative;
+            color: white;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 600;
+            margin: 0.5rem;
             overflow: hidden;
+            padding: 0.5rem 1.5rem;
+            position: relative;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .cta-button:before {
@@ -170,7 +184,7 @@
         /* Enhanced Hero Section */
         .hero {
             margin-top: 80px;
-            padding: 8rem 0;
+            padding: 0;
             background: 
                 radial-gradient(ellipse at top, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
                 radial-gradient(ellipse at bottom, rgba(6, 182, 212, 0.1) 0%, transparent 50%),
@@ -255,16 +269,18 @@
         }
 
         .hero h1 {
-            font-size: clamp(2.5rem, 6vw, 5rem);
-            font-weight: 900;
+            font-family: 'Manrope', sans-serif;
+            font-size: 48px;
+            line-height: 1.1;
             margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .hero h1 .title-end {
             background: var(--gradient-primary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            line-height: 1.1;
-            letter-spacing: -0.02em;
-            position: relative;
         }
 
         .hero h1:after {
@@ -280,7 +296,7 @@
         }
 
         .hero p {
-            font-size: 1.25rem;
+            font-size: 16px;
             color: var(--text-secondary);
             margin-bottom: 3rem;
             line-height: 1.7;
@@ -295,19 +311,22 @@
             margin-bottom: 4rem;
         }
 
+        .btn-icon {}
+
         .btn-primary {
+            font-family: 'Manrope', sans-serif;
             background: var(--gradient-primary);
             color: white;
             padding: 1.25rem 2.5rem;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 16px;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             box-shadow: var(--shadow-md);
             display: inline-flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 0.5rem;
             position: relative;
             overflow: hidden;
         }
@@ -328,6 +347,7 @@
         }
 
         .btn-secondary {
+            font-family: 'Manrope', sans-serif;
             background: rgba(14, 165, 233, 0.1);
             color: var(--primary-color);
             padding: 1.25rem 2.5rem;
@@ -335,11 +355,11 @@
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 16px;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: inline-flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 0.5rem;
             -webkit-backdrop-filter: blur(10px); /* ADDED for Safari compatibility */
             backdrop-filter: blur(10px);
         }
@@ -389,8 +409,8 @@
         }
 
         .section-header h2 {
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 800;
+            font-family: 'Manrope', sans-serif;
+            font-size: 32px;
             margin-bottom: 1.5rem;
             color: var(--text-primary);
             position: relative;
@@ -409,7 +429,7 @@
         }
 
         .section-header p {
-            font-size: 1.2rem;
+            font-size: 16px;
             color: var(--text-secondary);
             max-width: 700px;
             margin: 0 auto;
@@ -439,8 +459,24 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 1px;
+            height: 4px;
             background: var(--gradient-primary);
+        }
+        
+        .value-card:nth-child(2):before {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+        
+        .value-card:nth-child(3):before {
+            background: var(--gradient-accent);
+        }
+        
+        .value-card:nth-child(4):before {
+            background: var(--gradient-secondary);
+        }
+        
+        .value-card:nth-child(5):before {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
         }
 
         .value-card:hover {
@@ -463,6 +499,22 @@
             box-shadow: var(--shadow-md);
             transition: all 0.3s ease;
         }
+        
+        .value-card:nth-child(2) .value-icon {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+        
+        .value-card:nth-child(3) .value-icon {
+            background: var(--gradient-accent);
+        }
+        
+        .value-card:nth-child(4) .value-icon {
+            background: var(--gradient-secondary);
+        }
+        
+        .value-card:nth-child(5) .value-icon {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+        }
 
         .value-card:hover .value-icon {
             transform: scale(1.1) rotate(5deg);
@@ -478,7 +530,8 @@
         }
 
         .value-card h3 {
-            font-size: 1.5rem;
+            font-family: 'Manrope', sans-serif;
+            font-size: 24px;
             font-weight: 700;
             margin-bottom: 1rem;
             color: var(--text-primary);
@@ -487,7 +540,7 @@
         .value-card p {
             color: var(--text-secondary);
             line-height: 1.8;
-            font-size: 1rem;
+            font-size: 16px;
         }
 
         /* Enhanced Solutions Section */
@@ -576,6 +629,7 @@
         }
 
         .solution-card h3 {
+            font-family: 'Manrope', sans-serif;
             font-size: 1.6rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
@@ -586,7 +640,7 @@
             color: var(--text-secondary);
             margin-bottom: 2rem;
             line-height: 1.8;
-            font-size: 1rem;
+            font-size: 16px;
         }
 
         .solution-features {
@@ -601,6 +655,7 @@
             align-items: center;
             gap: 1rem;
             transition: all 0.3s ease;
+            font-size: 16px;
         }
 
         .solution-features li:hover {
@@ -609,12 +664,17 @@
         }
 
         .solution-features li:before {
-            content: '✓';
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
             color: #10b981;
-            font-weight: bold;
             font-size: 1.2rem;
             width: 20px;
             text-align: center;
+        }
+
+        .solution-card .fas {
+            font-size: 2.5rem;
         }
 
         /* Enhanced Target Market Section */
@@ -654,7 +714,7 @@
         }
 
         .market-card:nth-child(2):before {
-            background: var(--gradient-secondary);
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
         }
 
         .market-card:nth-child(3):before {
@@ -683,7 +743,7 @@
         }
 
         .market-card:nth-child(2) .market-icon {
-            background: var(--gradient-secondary);
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
         }
 
         .market-card:nth-child(3) .market-icon {
@@ -696,6 +756,7 @@
         }
 
         .market-card h3 {
+            font-family: 'Manrope', sans-serif;
             font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
@@ -705,6 +766,7 @@
         .market-card p {
             color: var(--text-secondary);
             line-height: 1.8;
+            font-size: 16px;
         }
 
         /* Enhanced Team Section */
@@ -788,6 +850,7 @@
         }
 
         .team-card h3 {
+            font-family: 'Manrope', sans-serif;
             font-size: 1.6rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
@@ -798,12 +861,13 @@
             color: var(--primary-color);
             font-weight: 600;
             margin-bottom: 1.5rem;
-            font-size: 1.1rem;
+            font-size: 16px;
         }
 
         .team-card p {
             color: var(--text-secondary);
             line-height: 1.8;
+            font-size: 16px;
         }
 
         /* Enhanced CTA Section */
@@ -835,8 +899,8 @@
         }
 
         .cta-section h2 {
-            font-size: clamp(2rem, 4vw, 3.5rem);
-            font-weight: 800;
+            font-family: 'Manrope', sans-serif;
+            font-size: 32px;
             margin-bottom: 1.5rem;
             background: var(--gradient-primary);
             -webkit-background-clip: text;
@@ -845,7 +909,7 @@
         }
 
         .cta-section p {
-            font-size: 1.2rem;
+            font-size: 16px;
             margin-bottom: 3rem;
             opacity: 0.9;
             max-width: 600px;
@@ -855,17 +919,18 @@
         }
 
         .btn-white {
+            font-family: 'Manrope', sans-serif;
             background: var(--gradient-primary);
             color: #FFFFFF;
             padding: 1.25rem 3rem;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 16px;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             display: inline-flex;
             align-items: center;
-            gap: 1rem;
+            gap: 0.5rem;
             box-shadow: var(--shadow-md);
             position: relative;
             overflow: hidden;
@@ -909,7 +974,8 @@
         }
 
         .footer-section h4 {
-            font-size: 1.3rem;
+            font-family: 'Manrope', sans-serif;
+            font-size: 24px;
             font-weight: 700;
             margin-bottom: 1.5rem;
             background: var(--gradient-primary);
@@ -924,6 +990,7 @@
             text-decoration: none;
             line-height: 1.8;
             transition: all 0.3s ease;
+            font-size: 16px;
         }
 
         .footer-section a:hover {
@@ -984,9 +1051,10 @@
         }
 
         .mobile-nav-links a {
+            font-family: 'Manrope', sans-serif;
             color: var(--text-primary);
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 16px;
             font-weight: 500;
             display: block;
             padding: 0.5rem;
@@ -1010,6 +1078,12 @@
 
             .mobile-menu-toggle {
                 display: flex;
+                order: 3;
+            }
+            
+            nav.container {
+                display: flex;
+                justify-content: space-between;
             }
             
             .hero {
@@ -1133,7 +1207,7 @@
     <!-- Header -->
     <header id="header">
         <nav class="container">
-            <div class="logo">E.V.A.</div>
+            <div class="logo"><a href="#hero">EVA</a></div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#solutions">Solutions</a></li>
@@ -1145,8 +1219,7 @@
                 <span></span>
                 <span></span>
             </div>
-            <a href="#contact" class="cta-button">Get Started</a>
-        </nav>
+            <a href="#contact" class="cta-button">Get Started</a>        </nav>
         <div class="mobile-menu" id="mobileMenu">
             <ul class="mobile-nav-links">
                 <li><a href="#about">About</a></li>
@@ -1164,16 +1237,16 @@
             <div class="floating-shape"></div>
             <div class="floating-shape"></div>
         </div>
-        <div class="container">
+        <div id="hero" class="container">
             <div class="hero-content fade-in">
-                <h1>AI Solutions That Elevate Human Potential</h1>
+                <h1>AI solutions <span class="title-end">that elevate human potential</span></h1>
                 <p>Transform your organization with ethical AI automation that enhances human capability, amplifies impact, and honors human dignity through intelligent systems designed for meaningful collaboration.</p>
                 <div class="hero-buttons">
                     <a href="#solutions" class="btn-primary">
-                        🚀 Explore Solutions
+                        <span class="btn-icon"><i class="fas fa-route"></i></span> Explore Solutions
                     </a>
                     <a href="#contact" class="btn-secondary">
-                        📅 Schedule Consultation
+                        <span class="btn-icon"><i class="fas fa-calendar-check"></i></span> Schedule Consultation
                     </a>
                 </div>
                 <div class="hero-stats">
@@ -1198,53 +1271,43 @@
     <section id="about" class="values">
         <div class="container">
             <div class="section-header fade-in">
-                <h2>Our Core Values</h2>
+                <h2>Our core values</h2>
                 <p>We believe technology should serve humanity, not the other way around. Our approach centers on creating AI solutions that truly elevate human potential while fostering authentic connections and sustainable growth.</p>
             </div>
             <div class="values-grid">
                 <div class="value-card fade-in">
                     <div class="value-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                        </svg>
+                        <i class="fas fa-user"></i>
                     </div>
-                    <h3>Human Elevation</h3>
+                    <h3>Human elevation</h3>
                     <p>Technology should lift people up, not replace them. We measure success by how our solutions enhance human capability and create more time for meaningful activities that matter most.</p>
                 </div>
                 <div class="value-card fade-in">
                     <div class="value-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v2H7v-2.21c-.79-.25-1.48-.63-2.07-1.12L3.05 15.54C4.56 18.04 7.96 20 12 20c1.89 0 3.63-.57 5.09-1.56L15 13.7V12h1.57c.93-.09 1.79-.35 2.56-.75l1.82 1.82c-1.31 1.39-3.08 2.34-5.02 2.66L13 17v2h-2v-2.07zM12 4c.99 0 1.93.16 2.79.44L12.5 7H11V5.5c0-.83.67-1.5 1.5-1.5S14 4.67 14 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.49 6-3.31 6-6.72h-1.7z"/>
-                        </svg>
+                        <i class="fas fa-seedling"></i>
                     </div>
-                    <h3>Ecological Thinking</h3>
+                    <h3>Ecological thinking</h3>
                     <p>We design with awareness of second and third-order consequences, considering effects on the entire organizational ecosystem and balancing stakeholder needs for sustainable outcomes.</p>
                 </div>
                 <div class="value-card fade-in">
                     <div class="value-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83zM3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19z"/>
-                        </svg>
+                        <i class="fas fa-pen-to-square"></i>
                     </div>
-                    <h3>Craft Excellence</h3>
+                    <h3>Craft excellence</h3>
                     <p>Details matter in everything we create. We pursue mastery in implementation, ensuring our code quality reflects deep respect for those who will maintain and benefit from our solutions.</p>
                 </div>
                 <div class="value-card fade-in">
                     <div class="value-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zM8 11h8v2H8v-2z"/>
-                        </svg>
+                        <i class="fas fa-link"></i>
                     </div>
-                    <h3>Authentic Connection</h3>
+                    <h3>Authentic connection</h3>
                     <p>Technology should enable more meaningful human interaction, not replace it. We build trust through transparency and communicate with clarity, integrity, and genuine care.</p>
                 </div>
                 <div class="value-card fade-in">
                     <div class="value-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2 .9-2 2s.9 2 2 2 2 .9 2 2-.9 2-2 2zm9 4h-2v-4h2v4zm4-4h-2v-4h2v4z"/>
-                        </svg>
+                        <i class="fas fa-sync"></i>
                     </div>
-                    <h3>Regenerative Impact</h3>
+                    <h3>Regenerative impact</h3>
                     <p>Our work creates positive spirals of value that compound over time. Solutions generate more capacity than they consume, turning client success into broader community benefit.</p>
                 </div>
             </div>
@@ -1255,72 +1318,64 @@
     <section id="solutions" class="solutions">
         <div class="container">
             <div class="section-header fade-in">
-                <h2>Our Solutions</h2>
+                <h2>Our solutions</h2>
                 <p>Comprehensive AI automation systems designed to enhance your organization's capabilities while preserving what makes you uniquely human and authentically connected to your mission.</p>
             </div>
             <div class="solutions-grid">
                 <div class="solution-card slide-in-left">
                     <div class="solution-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-3 2v5l-1-.75L15 9V4h2zm-3 7H9.5v-.75L12 8.5V4h2v7zm-3-3H7.5v-.75L9 6.5V4h2v4z"/>
-                        </svg>
+                        <i class="fas fa-brain"></i>
                     </div>
-                    <h3>Knowledge Elevation System</h3>
-                    <p>Transform organizational information into accessible intelligence through advanced RAG technology and intuitive interfaces that make complex data instantly actionable.</p>
+                    <h3>Knowledge elevation system</h3>
+                    <p>Transform organizational information into accessible intelligence through advanced Retrieval-Augmented Generation (RAG) technology and intuitive interfaces that make complex data instantly actionable.</p>
                     <ul class="solution-features">
-                        <li>Document Intelligence Pipeline with Advanced Processing</li>
-                        <li>Custom Knowledge Base Architecture & Design</li>
-                        <li>Semantic Search with Natural Language Queries</li>
-                        <li>Insight Extraction & Pattern Recognition</li>
-                        <li>Seamless Integration Framework</li>
+                        <li>Document intelligence pipeline with advanced processing</li>
+                        <li>Custom knowledge base architecture & design</li>
+                        <li>Semantic search with natural language queries</li>
+                        <li>Insight extraction & pattern recognition</li>
+                        <li>Seamless integration framework</li>
                     </ul>
                 </div>
                 <div class="solution-card slide-in-right">
                     <div class="solution-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M4 18l8.5-6L4 6v12zm9-12v12l8.5-6L13 6z"/>
-                        </svg>
+                        <i class="fas fa-bolt"></i>
                     </div>
-                    <h3>Content Acceleration Engine</h3>
+                    <h3>Content acceleration engine</h3>
                     <p>Integrated content creation and distribution system that maintains your authentic brand voice while dramatically increasing output capacity across multiple channels and platforms.</p>
                     <ul class="solution-features">
-                        <li>Voice-Aligned Generation with Brand Consistency</li>
-                        <li>Multi-Channel Distribution & Automation</li>
-                        <li>Strategic Content Planning & Optimization</li>
-                        <li>Performance Analytics & Insights</li>
-                        <li>Editorial Workflow Integration & Management</li>
+                        <li>Voice-aligned generation with brand consistency</li>
+                        <li>Multi-channel distribution & automation</li>
+                        <li>Strategic content planning & optimization</li>
+                        <li>Performance analytics & insights</li>
+                        <li>Editorial workflow integration & management</li>
                     </ul>
                 </div>
                 <div class="solution-card slide-in-left">
                     <div class="solution-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.49 6-3.31 6-6.72h-1.7z"/>
-                        </svg>
+                        <i class="fas fa-microphone"></i>
                     </div>
-                    <h3>Voice AI Solutions</h3>
+                    <h3>Voice AI solutions</h3>
                     <p>Voice interface and audio content systems that create natural, emotionally resonant audio experiences for both internal communications and customer-facing applications.</p>
                     <ul class="solution-features">
-                        <li>Custom Voice Identity Development</li>
-                        <li>Intelligent Audio Content Generation</li>
-                        <li>Interactive Voice Interface Design</li>
-                        <li>Advanced Voice Analytics & Insights</li>
-                        <li>Multi-Platform Integration & Deployment</li>
+                        <li>Custom voice identity development</li>
+                        <li>Intelligent audio content generation</li>
+                        <li>Interactive voice interface design</li>
+                        <li>Advanced voice analytics & insights</li>
+                        <li>Multi-platform integration & deployment</li>
                     </ul>
                 </div>
                 <div class="solution-card slide-in-right">
                     <div class="solution-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2 .9-2 2s.9 2 2 2 2 .9 2 2-.9 2-2 2zm9 4h-2v-4h2v4zm4-4h-2v-4h2v4z"/>
-                        </svg>
+                        <i class="fas fa-cogs"></i>
                     </div>
-                    <h3>Intelligent Agent Ecosystem</h3>
+                    <h3>Intelligent agent ecosystem</h3>
                     <p>Multi-agent systems designed for complex workflow automation, research, and decision support with sophisticated collaboration frameworks and human-in-the-loop design.</p>
                     <ul class="solution-features">
-                        <li>Custom Agent Development & Training</li>
-                        <li>Advanced Tool Integration Framework</li>
-                        <li>Workflow Orchestration & Automation</li>
-                        <li>Human-in-the-Loop Design Philosophy</li>
-                        <li>Adaptive Learning & Optimization Systems</li>
+                        <li>Custom agent development & training</li>
+                        <li>Advanced tool integration framework</li>
+                        <li>Workflow orchestration & automation</li>
+                        <li>Human-in-the-loop design philosophy</li>
+                        <li>Adaptive learning & optimization systems</li>
                     </ul>
                 </div>
             </div>
@@ -1331,35 +1386,29 @@
     <section class="target-market">
         <div class="container">
             <div class="section-header fade-in">
-                <h2>Who We Serve</h2>
+                <h2>Who we serve</h2>
                 <p>We partner with visionary organizations that share our commitment to using technology for positive impact and meaningful transformation in their communities and beyond.</p>
             </div>
             <div class="market-grid">
                 <div class="market-card fade-in">
                     <div class="market-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                        </svg>
+                        <i class="fas fa-hands-helping"></i>
                     </div>
-                    <h3>Mission-Driven Organizations</h3>
+                    <h3>Mission-driven organizations</h3>
                     <p>Nonprofits, NGOs, B Corporations, social enterprises, educational institutions, and healthcare organizations seeking to amplify their impact and reach more people effectively.</p>
                 </div>
                 <div class="market-card fade-in">
                     <div class="market-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2 .9-2 2s.9 2 2 2 2 .9 2 2-.9 2-2 2zm9 4h-2v-4h2v4zm4-4h-2v-4h2v4z"/>
-                        </svg>
+                        <i class="fas fa-leaf"></i>
                     </div>
-                    <h3>Conscious Businesses</h3>
+                    <h3>Conscious businesses</h3>
                     <p>Wellness providers, sustainable companies, regenerative agriculture enterprises, community-centered retail, and creative businesses committed to positive social and environmental change.</p>
                 </div>
                 <div class="market-card fade-in">
                     <div class="market-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12.65 10C11.83 7.67 9.61 6 7 6c-3.31 0-6 2.69-6 6s2.69 6 6 6c2.61 0 4.83-1.67 5.65-4H17v4h4v-4h2v-4H12.65zM7 14c-1.1 0-2 .9-2 2s.9 2 2 2 2 .9 2 2-.9 2-2 2zm9 4h-2v-4h2v4zm4-4h-2v-4h2v4z"/>
-                        </svg>
+                        <i class="fas fa-lightbulb"></i>
                     </div>
-                    <h3>Forward-Thinking Enterprises</h3>
+                    <h3>Forward-thinking enterprises</h3>
                     <p>Innovation departments, ESG initiatives, knowledge management transformations, employee wellbeing programs, and customer experience enhancement projects in progressive organizations.</p>
                 </div>
             </div>
@@ -1370,27 +1419,27 @@
     <section id="team" class="team">
         <div class="container">
             <div class="section-header fade-in">
-                <h2>Meet Our Team</h2>
+                <h2>Meet our team</h2>
                 <p>A passionate group of technologists, strategists, and innovators dedicated to creating AI solutions that truly serve humanity while advancing organizational excellence and authentic impact.</p>
             </div>
             <div class="team-grid">
                 <div class="team-card fade-in">
                     <div class="team-avatar">HH</div>
-                    <h3>Hans J Havlik</h3>
+                    <h3>Hans Havlik</h3>
                     <div class="team-role">Chief Technical Officer</div>
                     <p>Leading technical vision and AI implementation with a focus on ensuring our solutions meet the highest standards of excellence, ethical consideration, and sustainable innovation.</p>
                 </div>
                 <div class="team-card fade-in">
                     <div class="team-avatar">BB</div>
-                    <h3>Balarama D Bosch</h3>
-                    <div class="team-role">Chief Revenue Officer</div>
-                    <p>Driving business growth and cultivating meaningful client relationships, connecting mission-driven organizations with AI solutions that authentically serve their purpose.</p>
+                    <h3>Bala Bosch</h3>
+                    <div class="team-role">Chief Product Officer</div>
+                    <p>Defining product strategy and user experience design, ensuring our solutions are intuitive, powerful, and perfectly aligned with evolving human needs and organizational goals.</p>
                 </div>
                 <div class="team-card fade-in">
                     <div class="team-avatar">JK</div>
                     <h3>Jordan Kearfott</h3>
-                    <div class="team-role">Chief Product Officer</div>
-                    <p>Defining product strategy and user experience design, ensuring our solutions are intuitive, powerful, and perfectly aligned with evolving human needs and organizational goals.</p>
+                    <div class="team-role">Chief Revenue Officer</div>
+                    <p>Driving business growth and cultivating meaningful client relationships, connecting mission-driven organizations with AI solutions that authentically serve their purpose.</p>
                 </div>
             </div>
         </div>
@@ -1400,10 +1449,10 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content fade-in">
-                <h2>Ready to Elevate Your Organization?</h2>
+                <h2>Ready to elevate your organization?</h2>
                 <p>Let's explore how ethical AI automation can transform your work, amplify your impact, and create more meaningful connections with those you serve.</p>
                 <a href="mailto:admin@elevatedvector.com" class="btn-white">
-                    ✉️ Contact Us Today
+                    <span class="btn-icon"><i class="fas fa-paper-plane"></i></span> Contact Us Today
                 </a>
             </div>
         </div>
@@ -1418,20 +1467,20 @@
                     <p>Transforming organizations through ethical AI solutions that enhance human potential, foster authentic connection, and create regenerative impact in communities worldwide.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact Information</h4>
+                    <h4>Contact information</h4>
                     <p>Email: <a href="mailto:admin@elevatedvector.com">admin@elevatedvector.com</a></p>
                     <p>Ready to discuss your AI automation needs and explore possibilities together.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Our Solutions</h4>
-                    <p><a href="#solutions">Knowledge Elevation System</a></p>
-                    <p><a href="#solutions">Content Acceleration Engine</a></p>
-                    <p><a href="#solutions">Voice AI Solutions</a></p>
-                    <p><a href="#solutions">Intelligent Agent Ecosystem</a></p>
+                    <h4>Our solutions</h4>
+                    <p><a href="#solutions">Knowledge elevation system</a></p>
+                    <p><a href="#solutions">Content acceleration engine</a></p>
+                    <p><a href="#solutions">Voice AI solutions</a></p>
+                    <p><a href="#solutions">Intelligent agent ecosystem</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Elevated Vector Automation LLC. All rights reserved. • Ethical AI • Human-Centered Design • Regenerative Impact</p>
+                <p>&copy; 2025 Elevated Vector Automation LLC. All rights reserved. • Ethical AI • Human-centered design • Regenerative impact</p>
             </div>
         </div>
     </footer>
