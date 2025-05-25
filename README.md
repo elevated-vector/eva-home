@@ -1,6 +1,6 @@
 # Elevated Vector Automation - Official Website
 
-[![GitHub Pages](https://github.com/elevatedvector/elevatedvector.com/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/elevatedvector/elevatedvector.com/actions/workflows/pages/pages-build-deployment)
+[![GitHub Pages](https://github.com/elevated-vector/elevatedvector.com/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/elevated-vector/elevatedvector.com/actions/workflows/pages/pages-build-deployment)
 [![Website Status](https://img.shields.io/website?url=https%3A%2F%2Felevatedvector.com)](https://elevatedvector.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -11,7 +11,7 @@ The official website for Elevated Vector Automation LLC - a specialized AI consu
 ## 🌐 Live Website
 
 **Production**: [https://elevatedvector.com](https://elevatedvector.com)  
-**Development**: [https://elevatedvector.github.io/elevatedvector.com/](https://elevatedvector.github.io/elevatedvector.com/)
+**Development**: [https://elevatedvector.github.io/eva-home/](https://elevated-vector.github.io/eva-home/)
 
 ---
 
