@@ -44,6 +44,28 @@
         p:not(:last-child) {
             margin-bottom: 1ex;
         }
+        
+        .skip-to-content {
+            position: absolute;
+            left: -9999px;
+            top: 1rem;
+            z-index: 1001;
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s;
+        }
+        
+        .skip-to-content:focus {
+            left: 1rem;
+            transform: translateY(0);
+            outline: 2px solid white;
+            outline-offset: 4px;
+        }
 
         body {
             font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -1209,15 +1231,15 @@
     <div class="loading-overlay" id="loadingOverlay">
         <div class="loader"></div>
     </div>
-
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
     <!-- Header -->
     <header id="header">
         <nav class="container">
             <div class="logo"><a href="#hero">EVA</a></div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
                 <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#team">Team</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu-toggle" id="mobileMenuToggle">
@@ -1228,16 +1250,15 @@
             <a href="#contact" class="cta-button">Get Started</a>        </nav>
         <div class="mobile-menu" id="mobileMenu">
             <ul class="mobile-nav-links">
-                <li><a href="#about">About</a></li>
                 <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#team">Team</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="main-content" class="hero">
         <div class="hero-floating-elements">
             <div class="floating-shape"></div>
             <div class="floating-shape"></div>
@@ -1245,28 +1266,28 @@
         </div>
         <div id="hero" class="container">
             <div class="hero-content fade-in">
-                <h1>Strategic AI Automation, <span class="title-end">Expertly Delivered</span></h1>
+                <h1>Strategic AI automation, <span class="title-end">expertly delivered</span></h1>
                 <p>At Elevated Vector, we leverage our 30+ years of combined experience with cutting-edge AI to provide your organization with tailored automation solutions. Through our platform, we empower you to optimize processes, unlock data-driven insights, connect with customers across digital channels, and drive sustainable growth by amplifying your team's abilities.</p>
                 <div class="hero-buttons">
                     <a href="#solutions" class="btn-primary">
-                        <span class="btn-icon"><i class="fas fa-route"></i></span> Explore Solutions
+                        <span class="btn-icon"><i class="fas fa-route"></i></span> Explore solutions
                     </a>
                     <a href="#contact" class="btn-secondary">
-                        <span class="btn-icon"><i class="fas fa-calendar-check"></i></span> Schedule Consultation
+                        <span class="btn-icon"><i class="fas fa-calendar-check"></i></span> Schedule consultation
                     </a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat-item">
                         <span class="stat-number">360°</span>
-                        <span>Organization Insight</span>
+                        <span>Organization insight</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">24/7</span>
-                        <span>Intelligent Systems</span>
+                        <span>Intelligent systems</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">∞</span>
-                        <span>Human Potential</span>
+                        <span>Human potential</span>
                     </div>
                 </div>
             </div>
@@ -1278,29 +1299,29 @@
         <div class="container">
             <div class="section-header fade-in">
                 <h2>Who We Serve</h2>
-                <p>We provide small and medium-sized businesses (SMBs) with the powerful Artificial Intelligence (AI) tools used by large enterprises. We believe AI should be a growth engine for all businesses, regardless of size. Our mission is to make advanced AI easy to understand and apply effectively within your operations.</p>
-                <p>We serve as your dedicated technology partner, managing the complexities of modern technology. This allows you to focus your resources and expertise on running and growing your business. As we work together, we'll ensure you understand how these tools work and how they are being used responsibly to benefit you.</p>
+                <p>We provide small and medium-sized businesses (SMBs) and mission-driven organizations with the powerful Artificial Intelligence (AI) tools used by large enterprises. We believe AI should be a growth engine for all businesses and organizations, regardless of size. Our mission is to make advanced AI easy to use and understand, and apply it effectively within your operations.</p>
+                <p>We serve as your dedicated technology partner, managing the complexities of modern technology. This allows you to focus your resources and expertise on running and growing your business. As we work together, we'll ensure you understand how these tools work and how to use them to benefit you.</p>
             </div>
             <div class="market-grid">
                 <div class="market-card fade-in">
                     <div class="market-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Business Growth</h3>
+                    <h3>Business growth</h3>
                     <p>Increase your overall efficiency and prepare for growth by automating key business workflows.</p>
                 </div>
                 <div class="market-card fade-in">
                     <div class="market-icon">
                         <i class="fas fa-bullseye"></i>
                     </div>
-                    <h3>Sales Excellence</h3>
+                    <h3>Sales excellence</h3>
                     <p>Empower your sales pipeline with AI-driven tools to boost productivity and results.</p>
                 </div>
                 <div class="market-card fade-in">
                     <div class="market-icon">
                         <i class="fas fa-comments"></i>
                     </div>
-                    <h3>Customer Success</h3>
+                    <h3>Customer success</h3>
                     <p>Enhance customer interactions with smarter communication and support solutions.</p>
                 </div>
             </div>
@@ -1393,7 +1414,7 @@
     </section>
 
     <!-- Team Section -->
-    <section id="team" class="team">
+    <section class="team">
         <div class="container">
             <div class="section-header fade-in">
                 <h2>Meet Our Team</h2>
