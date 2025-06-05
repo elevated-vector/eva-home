@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Calendar Appointment Scheduling begin -->
+    <link href="google-schedular.css" rel="stylesheet">
+    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+    <!-- Google Calendar Appointment Scheduling end -->
     <style>
         :root {
             --primary-color: #0ea5e9;
@@ -337,11 +341,10 @@
             margin-bottom: 4rem;
         }
 
-        .btn-primary {
+        .btn-primary, .cta-section .qxCTlb, .Xfsokf {
             font-family: 'Manrope', sans-serif;
             background: var(--gradient-primary);
             color: white;
-            padding: 1.25rem 2.5rem;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
@@ -351,11 +354,15 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            position: relative;
             overflow: hidden;
         }
 
-        .btn-primary:before {
+        .btn-primary, .cta-section .qxCTlb {
+            padding: 1.25rem 2.5rem;
+            position: relative;
+        }
+
+        .btn-primary:after, .cta-section .qxCTlb:after, .Xfsokf:after {
             content: '';
             position: absolute;
             top: 0;
@@ -366,20 +373,20 @@
             transition: left 0.5s;
         }
 
-        .btn-primary:hover:before {
+        .btn-primary:hover:after, .cta-section .qxCTlb:hover:after, .Xfsokf:hover:after {
             left: 100%;
         }
 
-        .btn-primary:hover, .btn-secondary:hover {
+        .btn-primary:hover, .btn-secondary:hover, .qxCTlb:hover, .Xfsokf:hover {
             transform: translateY(-3px) scale(1.05);
             box-shadow: var(--shadow-lg);
             filter: drop-shadow(var(--glow-primary));
         }
 
-        .btn-secondary {
+        .btn-secondary, .hero .qxCTlb {
             font-family: 'Manrope', sans-serif;
-            background: rgba(14, 165, 233, 0.1);
-            color: var(--primary-color);
+            background: rgba(14, 165, 233, 0.1) !important;
+            color: var(--primary-color) !important;
             padding: 1.25rem 2.5rem;
             border: 2px solid var(--primary-color);
             border-radius: 50px;
@@ -394,7 +401,7 @@
             backdrop-filter: blur(10px);
         }
 
-        .btn-secondary:hover {
+        .btn-secondary:hover, .hero .qxCTlb:hover {
             background: var(--primary-color);
             color: white;
             border-color: var(--primary-color);
@@ -1274,9 +1281,21 @@
                     <a href="#solutions" class="btn-primary">
                         <span class="btn-icon"><i class="fas fa-route"></i></span> Explore solutions
                     </a>
-                    <a href="#contact" class="btn-secondary">
-                        <span class="btn-icon"><i class="fas fa-calendar-check"></i></span> Schedule consultation
-                    </a>
+                    <!-- Google Calendar Appointment Scheduling begin -->
+                    <script>
+                    (function() {
+                    var target = document.currentScript;
+                    window.addEventListener('load', function() {
+                        calendar.schedulingButton.load({
+                        url: 'https://calendar.google.com/calendar/appointments/AcZssZ0GhCGyIyGDtR8G1Qw4PEuIk8Vq4f_cNu_lBcI=?gv=true',
+                        color: '#039BE5',
+                        label: 'Schedule consultation',
+                        target,
+                        });
+                    });
+                    })();
+                    </script>
+                    <!-- end Google Calendar Appointment Scheduling -->
                 </div>
                 <div class="hero-stats">
                     <div class="stat-item">
@@ -1459,9 +1478,21 @@
             <div class="cta-content fade-in">
                 <h2>Ready to see what AI can do for you?</h2>
                 <p>Let's explore how Elevated Vector can partner with your business. We'll help you understand and implement practical AI solutions designed to increase your efficiency, amplify your impact, and let you focus on growth.</p>
-                <a href="mailto:admin@elevatedvector.com" class="btn-white">
-                    <span class="btn-icon"><i class="fas fa-paper-plane"></i></span> Start the conversation today
-                </a>
+                <!-- Google Calendar Appointment Scheduling begin -->
+                <script>
+                (function() {
+                var target = document.currentScript;
+                window.addEventListener('load', function() {
+                    calendar.schedulingButton.load({
+                    url: 'https://calendar.google.com/calendar/appointments/AcZssZ0GhCGyIyGDtR8G1Qw4PEuIk8Vq4f_cNu_lBcI=?gv=true',
+                    color: '#039BE5',
+                    label: 'Start the conversation today',
+                    target,
+                    });
+                });
+                })();
+                </script>
+                <!-- end Google Calendar Appointment Scheduling -->
             </div>
         </div>
     </section>

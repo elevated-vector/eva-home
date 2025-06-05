@@ -1,0 +1,86 @@
+/* Google Calendar Appointment Scheduling */
+/* Button */
+.qxCTlb {
+    cursor: pointer;
+    position: relative;
+    padding-left: 2.5rem !important;
+}
+
+.qxCTlb::before {
+    content: '\f274';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+}
+
+/* Modal */
+.hur54b {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 72px;
+    z-index: 9999;
+}
+
+/* Modal */
+.mmGMM {
+    border: none;
+    border-radius: 12px;
+    background-color: #f8fafc; /* --text-primary from our theme */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+}
+
+/* Close button */
+.Xfsokf {
+    align-items: center;
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #06b6d4 100%);
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    font-family: 'Manrope', sans-serif;
+    height: 36px;
+    padding: 16px;
+    position: fixed;
+    right: 72px;
+    top: 26px;
+    transition: all 0.3s ease;
+}
+
+/* Close button text */
+.L0Dvsd {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+/* Close button text */
+.uE25ec {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    letter-spacing: .25px;
+}
+
+/* Hover effect for close button */
+.Xfsokf:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(0 0 20px rgba(14, 165, 233, 0.3));
+}
+
+/* Sentinel */
+sentinel {}
