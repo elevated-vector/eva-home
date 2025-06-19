@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elevated Vector | AI Integration Solutions</title>
-    <meta name="description" content="We integrate your existing software and data with AI automation. Easy-to-use solutions with built-in security to protect your valuable information.">
+    <title>ElevatedVector.ai | Agent Integration Solutions</title>
+    <meta name="description" content="ElevatedVector.ai: Seamlessly integrate AI automation with your existing systems. We build secure, intuitive solutions that transform your data and software, empowering your organization for growth.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -326,7 +326,7 @@
         }
 
         .hero p {
-            font-size: 16px;
+            font-size: 20px;
             color: var(--text-secondary);
             margin-bottom: 3rem;
             line-height: 1.7;
@@ -571,6 +571,98 @@
         }
 
         .value-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        /* Single Block Values Section */
+        .values-single-block {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .value-block {
+            background: var(--background-card);
+            padding: 3rem;
+            border-radius: 24px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .value-block:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+        }
+
+        .value-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .value-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .value-item:hover {
+            transform: translateX(10px);
+        }
+
+        .value-icon-small {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .value-item:nth-child(2) .value-icon-small {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+
+        .value-item:nth-child(3) .value-icon-small {
+            background: var(--gradient-accent);
+        }
+
+        .value-item:nth-child(4) .value-icon-small {
+            background: var(--gradient-secondary);
+        }
+
+        .value-item:hover .value-icon-small {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .value-content {
+            flex: 1;
+        }
+
+        .value-content h3 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+
+        .value-content p {
             color: var(--text-secondary);
             line-height: 1.8;
             font-size: 16px;
@@ -868,6 +960,23 @@
             font-weight: bold;
             transition: all 0.3s ease;
             box-shadow: var(--shadow-md);
+            overflow: hidden;
+        }
+
+        .team-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            object-position: center 35%;
+        }
+
+        .team-card:first-child .team-avatar img {
+            object-position: center 5%;
+        }
+
+        .team-card:nth-child(2) .team-avatar img {
+            object-position: center 5%;
         }
 
         .team-card:nth-child(2) .team-avatar {
@@ -1154,6 +1263,20 @@
                 padding: 2rem;
             }
 
+            .value-block {
+                padding: 2rem;
+            }
+
+            .value-item {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .value-item:hover {
+                transform: translateY(-5px);
+            }
+
             .cta-section {
                 padding: 6rem 0;
             }
@@ -1226,7 +1349,6 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-
         /* Smooth scrolling for all browsers */
         html {
             scroll-behavior: smooth;
@@ -1243,7 +1365,7 @@
     <!-- Header -->
     <header id="header">
         <nav class="container">
-            <div class="logo"><a href="#hero">Elevated Vector</a></div>
+            <div class="logo"><a href="#hero">Elevated Vector.ai</a></div>
             <ul class="nav-links">
                 <li><a href="#solutions">Solutions</a></li>
                 <li><a href="#who-we-serve">Who we serve</a></li>
@@ -1275,27 +1397,126 @@
         </div>
         <div id="hero" class="container">
             <div class="hero-content fade-in">
-                <h1>Unlock your data with AI, simply.</h1>
-                <p>At Elevated Vector, we combine our 30+ years of software development experience with modern AI technologies to <strong>integrate intelligent solutions with your existing software</strong>. We connect your systems, optimize processes, unlock data-driven insights, and amplify your team's abilities while maintaining familiar workflows and interfaces.</p>
+                <h1>Your AI, Simplified. <br /> Then Elevated</h1><br />
+                <h3>Does your AI know your team's goals?</h3><br />
+                <p>AI should strategically amplify teams's capabilities and accelerate outcomes.<br /> We specialize in tailoring solutions to <strong>existing technology, roles, and SoPs.</strong><br /> Enriching teams at SMBs and Mission-Based Organizations.</p>
                 <div class="hero-buttons">
                     <a href="#solutions" class="btn-primary">
-                        <span class="btn-icon"><i class="fas fa-route"></i></span> Explore solutions
+                        <span class="btn-icon"><i class="fas fa-route"></i></span> Explore Solutions
                     </a>
-                    <!-- Google Calendar Appointment Scheduling begin -->
-                    <script>
-                    (function() {
-                    var target = document.currentScript;
-                    window.addEventListener('load', function() {
-                        calendar.schedulingButton.load({
-                        url: 'https://calendar.google.com/calendar/appointments/AcZssZ0GhCGyIyGDtR8G1Qw4PEuIk8Vq4f_cNu_lBcI=?gv=true',
-                        color: '#039BE5',
-                        label: 'Schedule consultation',
-                        target,
-                        });
-                    });
-                    })();
-                    </script>
-                    <!-- end Google Calendar Appointment Scheduling -->
+                    <style>
+                    
+/* Google Calendar Popup Styling - Match Website Theme */
+[role="dialog"][aria-modal="true"] {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 500px !important;
+    max-width: 90vw !important;
+    max-height: 80vh !important;
+    z-index: 9999 !important;
+    background: var(--background-card) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 24px !important;
+    box-shadow: var(--shadow-xl) !important;
+    font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+/* Calendar popup content styling */
+[role="dialog"][aria-modal="true"] * {
+    color: var(--text-primary) !important;
+}
+
+/* Calendar popup header */
+[role="dialog"][aria-modal="true"] [role="banner"],
+[role="dialog"][aria-modal="true"] header {
+    background: var(--background-alt) !important;
+    border-radius: 24px 24px 0 0 !important;
+    padding: 1.5rem !important;
+    border-bottom: 1px solid var(--border-color) !important;
+}
+
+/* Calendar popup main content */
+[role="dialog"][aria-modal="true"] main,
+[role="dialog"][aria-modal="true"] [role="main"] {
+    background: var(--background-card) !important;
+    padding: 1.5rem !important;
+}
+
+/* Calendar appointment options */
+[role="dialog"][aria-modal="true"] button,
+[role="dialog"][aria-modal="true"] [role="button"] {
+    background: var(--background-elevated) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 16px !important;
+    padding: 1rem !important;
+    margin: 0.5rem 0 !important;
+    transition: all 0.3s ease !important;
+    color: var(--text-primary) !important;
+}
+
+[role="dialog"][aria-modal="true"] button:hover,
+[role="dialog"][aria-modal="true"] [role="button"]:hover {
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: var(--shadow-md) !important;
+}
+
+/* Calendar popup close button */
+[role="dialog"][aria-modal="true"] [aria-label*="close"],
+[role="dialog"][aria-modal="true"] [aria-label*="Close"] {
+    background: transparent !important;
+    color: var(--text-secondary) !important;
+    border: none !important;
+    font-size: 1.5rem !important;
+    padding: 0.5rem !important;
+    border-radius: 50% !important;
+}
+
+[role="dialog"][aria-modal="true"] [aria-label*="close"]:hover,
+[role="dialog"][aria-modal="true"] [aria-label*="Close"]:hover {
+    background: var(--background-elevated) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Calendar popup text elements */
+[role="dialog"][aria-modal="true"] h1,
+[role="dialog"][aria-modal="true"] h2,
+[role="dialog"][aria-modal="true"] h3 {
+    color: var(--text-primary) !important;
+    font-family: 'Manrope', sans-serif !important;
+}
+
+[role="dialog"][aria-modal="true"] p,
+[role="dialog"][aria-modal="true"] span,
+[role="dialog"][aria-modal="true"] div {
+    color: var(--text-secondary) !important;
+}
+
+/* Calendar popup time/duration indicators */
+[role="dialog"][aria-modal="true"] [aria-label*="min"],
+[role="dialog"][aria-modal="true"] [title*="min"] {
+    color: var(--primary-color) !important;
+    font-weight: 600 !important;
+}
+</style>
+<script>
+(function() {
+var target = document.currentScript;
+window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+    url: 'https://calendar.google.com/calendar/appointments/AcZssZ0GhCGyIyGDtR8G1Qw4PEuIk8Vq4f_cNu_lBcI=?gv=true',
+    color: '#039BE5',
+    label: 'Schedule AI Solutions Chat',
+    target,
+    });
+});
+})();
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
+                    </div>
                 </div>
                 <div class="hero-stats">
                     <div class="stat-item">
@@ -1315,40 +1536,66 @@
         </div>
     </section>
 
-    <!-- Solutions Section -->
-    <section id="solutions" class="solutions">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2>Solutions</h2>
-                <p>At Elevated Vector, we integrate AI technology with your existing software and data. Our solutions connect and enhance your current systems to optimize internal operations and deliver measurable results.</p>
-            </div>
-            <div class="solutions-grid">
-                <div class="solution-card slide-in-left">
-                    <div class="solution-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Optimize your core business</h3>
-                    <p>We help you identify, understand, and enhance your core business operations. By implementing intelligent assistants, analytics dashboards, and automated workflows that work seamlessly with your existing tools, we enable you to:</p>
-                    <ul class="solution-features">
-                        <li>Integrate your systems: Connect your existing software to eliminate data silos and enable cross-platform automation.</li>
-                        <li>Streamline operations: Automate repetitive tasks and complex processes, freeing up your team.</li>
-                        <li>Boost productivity: Empower your employees with tools that help them work smarter and faster.</li>
-                        <li>Gain clearer insights: Turn your data into actionable intelligence for better decision-making.</li>
-                        <li>Ensure data protection: Implement industry-standard security practices to safeguard your valuable information.</li>
-                        <li>Preserve & share knowledge: Ensure vital company information is captured and easily accessible.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Target Market Section -->
     <section id="who-we-serve" class="target-market">
         <div class="container">
             <div class="section-header fade-in">
                 <h2>Who we serve</h2>
-                <p>We provide small and medium-sized businesses (SMBs) and mission-driven organizations with the <strong>Artificial Intelligence (AI) tools used by large enterprises</strong>. We believe AI should be a growth engine for all businesses and organizations, <strong>regardless of size</strong>. Our mission is to make advanced AI <strong>easy to use</strong> and understand, and apply it effectively within your operations.</p>
-                <p>We serve as your <strong>dedicated technology partner</strong>, managing the complexities of modern technology. This allows you to <strong>focus</strong> your resources and expertise <strong>on running and growing your business</strong>. As we work together, we'll <strong>ensure you understand</strong> how these tools work and how to use them to benefit you.</p>
+                <p>We are on a mission to deliver the same transformative capabilities leveraged by enterprise companies to SMBs and Mission Based Organizations. We understand that AI holds immense potential as a revolutionary growth engine, it's often implemented without the connectivity, context, and security that make it valuable.</p> 
+                <p>At Elevated Vector, our goal is to adapt AI to assist your team with their goals and utilize the value of your current tools, maximizing the impact of your existing investments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Solutions</h2> 
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card slide-in-left">
+                    <div class="solution-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Role Based Agents</h3>
+                    <p>Role-Based AI Agents specifically engineered to align with your organizational goals. Whether for Sales, Customer Experience, Donor Development, or custom defined our agents are designed to proactively support your teams, drive key performance indicators, and ensure Agents are always on a mission to advance your goals.</p>
+                </div>
+                <div class="solution-card slide-in-left">
+                    <div class="solution-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Utilize Tools & Features</h3>
+                    <p>When new features are released, they shouldn't be a burden for your team. We streamline adoption and maximize everyone's time by incorporating new available insights into your agent workflows.</p>
+                </div>
+                <div class="solution-card slide-in-left">
+                    <div class="solution-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Effortless adoption</h3>
+                    <p>Eliminate AI adoption friction. Generic prompt libraries and unstructured AI chats often fail to deliver tangible progress, or worse, lead to missteps due to missing operational context. Our solutions are designed for effortless adoption, integrating seamlessly into your workflows to ensure AI consistently provides relevant, actionable insights that align with your org's actual strategy.</p>
+                </div>
+                <div class="solution-card slide-in-left">
+                    <div class="solution-icon">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <h3>Continual Mission</h3>
+                    <p>When you make Elevated Vector your partner, we ensure your AI is always aligned with your strategic objectives and adapts to your evolving needs. This eliminates the burden of constant Prompt updates and the need for your teams to become 'Prompt Engineers' freeing them up to focus on core responsibilities.</p>
+                </div>
+                <div class="solution-card slide-in-left">
+                    <div class="solution-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Persistent memory</h3>
+                    <p>Leverage Persistent Memory for AI. We implement the advanced, enterprise-grade solutions trusted internally by hyperscalers to ensure your AI maintains full contextual awareness. This capability also enables leadership with actionable insights previously unattainable.</p>
+                </div>
+                <div class="solution-card slide-in-left">
+                    <div class="solution-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security</h3>
+                    <p>Safeguard your critical assets with Enterprise-Grade Security. We integrate robust data protection built on proven security principles, ensuring your valuable information remains secure and compliant.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -1358,43 +1605,37 @@
         <div class="container">
             <div class="section-header fade-in">
                 <h2>Our core values</h2>
-                <p>At Elevated Vector, our core values guide every strategic decision and solution we craft. We believe technology must serve humanity, and our approach, grounded in deep analytical expertise, centers on creating AI solutions that elevate human potential, foster authentic connections, and deliver lasting value.</p>
+                <p>Our core values are the bedrock for strategic decisions and solutions we deliver.</p>
             </div>
-            <div class="values-grid">
-                <div class="value-card fade-in">
-                    <div class="value-icon">
-                        <i class="fas fa-user"></i>
+            <div class="values-single-block">
+                <div class="value-block fade-in">
+                    <div class="value-item">
+                        <div class="value-icon-small">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="value-content">
+                            <h3>Human empowerment</h3>
+                            <p>Our guiding principle is that technology should empower people, expanding their capacity and reach. We define success by the measurable ways our solutions enhance human capability, freeing up valuable time for your teams to focus on the meaningful, high-impact activities that truly drive your mission forward.</p>
+                        </div>
                     </div>
-                    <h3>Human empowerment</h3>
-                    <p>Technology should empower people, not replace them. We measure success by how our solutions enhance human capability and create more time for meaningful activities that matter most.</p>
-                </div>
-                <div class="value-card fade-in">
-                    <div class="value-icon">
-                        <i class="fas fa-seedling"></i>
+                    <div class="value-item">
+                        <div class="value-icon-small">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="value-content">
+                            <h3>Systems Intelligence</h3>
+                            <p>We champion Systems Intelligence, understanding that any technological integration impacts your entire ecosystem. Our solutions are meticulously designed to anticipate and balance the needs of all stakeholders, ensuring they create holistic, lasting value that resonates across your entire organization.</p>
+                        </div>
                     </div>
-                    <h3>Systems Intelligence</h3>
-                    <p>We consider how changes affect your entire organization. Our solutions balance the needs of all stakeholders to create lasting value for everyone involved.</p>
-                </div>
-                <div class="value-card fade-in">
-                    <div class="value-icon">
-                        <i class="fas fa-pen-to-square"></i>
+                    <div class="value-item">
+                        <div class="value-icon-small">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <div class="value-content">
+                            <h3>Authentic Connection</h3>
+                            <p>That means we're committed to Craft and Candor, where every detail in our solutions reflects our dedication to quality. No hype or oversell, just transparency and communicating with clarity, integrity, and genuine care throughout our partnership.</p>
+                        </div>
                     </div>
-                    <h3>Craft excellence</h3>
-                    <p>Details matter in everything we create. We write clean, precise code that's easy to maintain and built to last.</p>
-                </div>
-                <div class="value-card fade-in">
-                    <div class="value-icon">
-                        <i class="fas fa-link"></i>
-                    </div>
-                    <h3>Authentic connection</h3>
-                    <p>Technology should enable more meaningful human interaction, not replace it. We build trust through transparency and communicate with clarity, integrity, and genuine care.</p>
-                </div>
-                <div class="value-card fade-in">
-                    <div class="value-icon">
-                        <i class="fas fa-sync"></i>
-                    </div>
-                    <h3>Compounding Value</h3>
-                    <p>Our solutions deliver benefits that grow over time. We build systems that create more value than they cost, turning your success into expanded capabilities that benefit your entire organization.</p>
                 </div>
             </div>
         </div>
@@ -1405,34 +1646,32 @@
         <div class="container">
             <div class="section-header fade-in">
                 <h2>Meet Our Team</h2>
-                <p>Elevated Vector is founded by a team that's driven by a shared vision: to ensure technology serves people, enhancing human capability.</p>
-                <p>We bring together deep expertise in technology, product design, and market strategy.</p>
-                <p>What unites us is our belief in building AI that truly helps people and our commitment to working closely and honestly with our clients.</p>
+                <p>We are united by our unwavering belief in building AI that genuinely transforms and our steadfast commitment to collaborative, transparent partnerships with our clients.</p>
             </div>
             <div class="team-grid">
                 <div class="team-card fade-in">
-                    <div class="team-avatar">HH</div>
+                    <div class="team-avatar">
+                        <img src="assets/images/Hans_Havlik.png" alt="Hans Havlik - Chief Technology Officer">
+                    </div>
                     <h3>Hans Havlik</h3>
                     <div class="team-role">Chief Technology Officer</div>
-                    <p>Hans guides Elevated Vector's technology vision, overseeing its architecture and AI implementation.</p>
-                    <p>Drawing on his experience leading enterprise AI and AIOps development at Capgemini, he focuses on building scalable, robust, and human-centered solutions.</p>
-                    <p>He translates complex business challenges into effective technology strategies that drive client success.</p>
+                    <p>Hans guides Elevated Vector's technology vision, overseeing its architecture and AI implementation. With extensive experience in enterprise AI and AIOps development, he has personally implemented comprehensive AI solutions for some of the largest organizations, focusing on building scalable, robust, and human-centered systems. His passion lies in translating complex challenges into innovative, effective technology strategies that directly drive measurable client success, all while being a positive force in the community. Chief Technology Officer</p>
                 </div>
                 <div class="team-card fade-in">
-                    <div class="team-avatar">BB</div>
+                    <div class="team-avatar">
+                        <img src="assets/images/Bala_Bosch.png" alt="Bala Bosch - Chief Product Officer">
+                    </div>
                     <h3>Bala Bosch</h3>
                     <div class="team-role">Chief Product Officer</div>
-                    <p>Bala leads Elevated Vector's product strategy, guiding solutions from concept to client impact.</p>
-                    <p>Drawing on over 20 years in software engineering, a background that includes leading user-facing product development at Feathr, he specializes in creating intuitive and powerful systems.</p>
-                    <p>He ensures our AI tools are accessible, valuable, and help clients achieve their goals.</p>
+                    <p>With over 20 years of extensive software development experience, he specializes in creating intuitive and powerful systems. His dedication ensures our AI tools are not only accessible and valuable but also strategically aligned to help clients seamlessly achieve their most ambitious goals, driven by a deep commitment to user-centric design and impactful innovation. Bala leads Elevated Vector's product strategy, guiding solutions from concept to client impact.</p>
                 </div>
                 <div class="team-card fade-in">
-                    <div class="team-avatar">JK</div>
+                    <div class="team-avatar">
+                        <img src="assets/images/Jordan_Kearfott.jpg" alt="Jordan Kearfott - Chief Revenue Officer">
+                    </div>
                     <h3>Jordan Kearfott</h3>
                     <div class="team-role">Chief Revenue Officer</div>
-                    <p>Jordan drives Elevated Vector's market strategy by forging strong client partnerships.</p>
-                    <p>Leveraging his background in business development and customer engagement at Feathr, he connects client needs with powerful AI solutions.</p>
-                    <p>By focusing on understanding client challenges and translating technology into clear value, he builds trust and ensures our partnerships drive growth and mutual success.</p>
+                    <p>Having worked closely with teams to incorporate AI solutions, I understand firsthand the challenges of bringing in these new systems that will respond to any request confidently. By deeply understanding client needs and goals, we can translate them into safe AI guardrails with tangible, clear value. Together we can cut through the hype and find solutions that consistently drive sustainable growth.</p>
                 </div>
             </div>
         </div>
@@ -1469,12 +1708,13 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Elevated Vector</h4>
-                    <p>Transforming organizations through AI solutions that enhance human potential, foster authentic connection, and deliver lasting value.</p>
+                    <p>Complete AI Solutions for SMBs and Mission-Based Organizations.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Contact information</h4>
                     <p>Email: <a href="mailto:admin@elevatedvector.com">admin@elevatedvector.com</a></p>
-                    <p>Ready to discuss your AI automation needs and explore possibilities together.</p>
+                    <p>Ready to see what AI can do for you?</p>
+                    <p>Sales: <a href="mailto:jordan@elevatedvector.com">sales@elevatedvector.com</a></p>
                 </div>
                 <div class="footer-section">
                     <h4>Our solutions</h4>

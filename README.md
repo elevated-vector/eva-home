@@ -36,7 +36,7 @@ This repository contains the source code for Elevated Vector Automation's corpor
 
 ### Company Mission
 
-We empower mission-driven organizations and forward-thinking businesses through ethical AI implementation, knowledge automation, and conscious technology integration.
+We empower SMBs (SaaS and non-SaaS) and mission-based orgs through ethical AI implementation, knowledge automation, and conscious technology integration.
 
 ### Core Values
 
@@ -311,8 +311,8 @@ git commit -m "feat: enhance mobile navigation accessibility"
 ### EVA Team Contacts
 
 - **Technical Issues**: Hans J Havlik (CTO) - [GitHub Issues](https://github.com/elevatedvector/elevatedvector.com/issues)
-- **Content Updates**: Jordan Kearfott (CPO) - [GitHub Issues](https://github.com/elevatedvector/elevatedvector.com/issues)
-- **Business Inquiries**: Balarama D Bosch (CRO) - <admin@elevatedvector.com>
+- **Content Updates**: Balarama D Bosch (CPO) - [GitHub Issues](https://github.com/elevatedvector/elevatedvector.com/issues)
+- **Business Inquiries**: Jordan Kearfott (CRO) - <sales@elevatedvector.com>
 (Please update contact information as needed)
 
 ### Getting Help
